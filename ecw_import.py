@@ -394,6 +394,7 @@ class ECWImport:
         ext = str()
         if size >= 1000000:
             size = size/1000000
+            size = round(size,3)
             ext = ' Go'
         elif size > 1000 and ext == str() :
             size = size/1000
