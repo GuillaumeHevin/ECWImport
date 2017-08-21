@@ -586,7 +586,7 @@ class ECWImport:
             Version = gdal.VersionInfo()
             nbreVersion = str()
             
-            if int(Version[:2]) < 201:
+            if int(Version[:3]) >= 201:
                 self.gdal.Version.setStyleSheet('color: green')
             else:
                 self.gdal.Version.setStyleSheet('color: red')
