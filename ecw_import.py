@@ -378,7 +378,7 @@ class ECWImport:
                 if end == 1:
                     return
 
-            except AttributeError, ValueError :
+            except:
                 result = self.prob_noGdal()
                 if result == 'Yes':
                     self.gdal_info()
