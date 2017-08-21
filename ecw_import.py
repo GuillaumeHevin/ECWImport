@@ -361,8 +361,7 @@ class ECWImport:
                
 
             try : 
-            
-                self.charg.ok.clicked.connect(self.close)
+           
                 ds = gdal.Open(ecwfile, gdal.GA_ReadOnly )
                 #print ds
                 ds = gdal.Translate(output,ds, projWin = [weast,north,east,south])
